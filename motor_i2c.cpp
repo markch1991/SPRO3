@@ -8,7 +8,7 @@ using namespace std;
 
 int main(void)
 {
-    i2c8Bit motor(0b00011111,string("/dev/i2c-1"));
+    i2c8Bit motor(0b00011001,string("/dev/i2c-1"));
     //instantiate i2c8Bit object called mcp23017
     //specify a device address 0x19 and i2c device "/dev/i2c-1"
     motor.writeReg(0b10,0b11111110);
